@@ -1,8 +1,8 @@
 //============================================================================
 // Name        : 0_Exercises.cpp
-// Author      : 
-// Version     :
-// Copyright   : 
+// Author      : Nabil
+// Version     : 2.0
+// Copyright   : OFC
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
