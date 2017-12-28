@@ -1,18 +1,39 @@
 //============================================================================
 // Name        : 0_Exercises.cpp
-// Author      : 
+// Author      :
 // Version     :
-// Copyright   : 
+// Copyright   :
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
 #include <iostream>
 using namespace std;
 void greet ();
+void calculus(int , float);
 
 int main() {
+	int a;
+	float b;
 	greet();
+	cout << "Enter table's cases: ";
+	cin >> a;
+	cout << "Enter the multiplucator a float is permitted: ";
+	cin >> b;
+	calculus (a,b);
 	return 0;
+}
+
+void calculus (int a, float b) {
+	int arr[a];
+	for (int i = 0; i < a; ++i) {
+		cout << "Please enter Number " i << " : " << endl;
+		cin >> arr[i]
+		arr[i] *= b;
+	}
+	for (int j = 0; j < a; ++j) {
+		cout << arr [i] <<" ";
+	}
+
 }
 
 void greet (){
