@@ -14,21 +14,19 @@ double calculus(int , float);
 int main() {
 	int a;
 	float b;
-	double sum;
 	greet();
 	cout << "Enter table's cases: ";
 	cin >> a;
 	cout << "Enter the multiplicator a float is permitted: ";
 	cin >> b;
 	calculus (a,b);
-	sum = calculus (a;b);
-	cout << sum;
 	return 0;
 }
 
 double calculus (int a, float b) {
 	double arr[a];
 	double sum{0};
+	start:
 	for (int i = 0; i < a; ++i) {
 		cout << "Please enter Number "<< i+1 << " : " << endl;
 		cin >> arr[i];
@@ -38,7 +36,13 @@ double calculus (int a, float b) {
 		cout << arr [j] <<" ";
 		sum += arr[j];
 	}
+	if (sum < 100) {
+		cout << "sum is  " << sum << "  less than 100"<< endl ;
+		goto start;
+	}else
+		cout << "great!";
 	return sum;
+
 }
 
 void greet (){
