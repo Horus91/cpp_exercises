@@ -17,21 +17,21 @@ int main() {
 	greet();
 	cout << "Enter table's cases: ";
 	cin >> a;
-	cout << "Enter the multiplucator a float is permitted: ";
+	cout << "Enter the multiplicator a float is permitted: ";
 	cin >> b;
 	calculus (a,b);
 	return 0;
 }
 
 void calculus (int a, float b) {
-	int arr[a];
+	double arr[a];
 	for (int i = 0; i < a; ++i) {
-		cout << "Please enter Number " i << " : " << endl;
-		cin >> arr[i]
+		cout << "Please enter Number "<< i+1 << " : " << endl;
+		cin >> arr[i];
 		arr[i] *= b;
 	}
 	for (int j = 0; j < a; ++j) {
-		cout << arr [i] <<" ";
+		cout << arr [j] <<" ";
 	}
 
 }
